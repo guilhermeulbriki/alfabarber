@@ -88,6 +88,14 @@ main form .input-content input {
   color: #4f4f4f;
 }
 
+main form .input-content input::placeholder {
+  color: #bdbdbd;
+}
+
+main form .input-content > img {
+  margin-right: 16px;
+}
+
 main form button {
   margin-top: 32px;
   width: 100%;
@@ -118,14 +126,6 @@ main form > a:hover img {
 
 main form > a img {
   margin-right: 8px;
-}
-
-main form .input-content input::placeholder {
-  color: #bdbdbd;
-}
-
-main form .input-content > img {
-  margin-right: 16px;
 }
 
 main aside {
