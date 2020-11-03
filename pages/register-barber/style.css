@@ -8,7 +8,7 @@ main {
 main .home {
   position: absolute;
   top: 40px;
-  left: 40px;
+  right: 40px;
   display: flex;
   align-items: center;
   color: #a51212;
@@ -27,22 +27,15 @@ main form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 160px;
   position: relative;
   text-align: center;
+  margin-right: 160px;
   animation: moveForm 0.6s;
 }
 
 main form > img {
   height: 203px;
   margin-bottom: 32px;
-}
-
-main form h2 {
-  font-weight: 500;
-  font-size: 24px;
-  color: #333333;
-  margin-bottom: 24px;
 }
 
 main form .select {
@@ -138,9 +131,7 @@ main form .input-content > img {
 main aside {
   width: 100%;
   max-width: 50%;
-  height: 100vh;
-  position: fixed;
-  right: 0;
+  left: 0;
 }
 
 main aside img {
@@ -151,7 +142,7 @@ main aside img {
 
 @keyframes moveForm {
   from {
-    transform: translateX(-100px);
+    transform: translateX(+100px);
     opacity: 0;
   } to {
     transform: translateX(0px);
@@ -171,12 +162,9 @@ main aside img {
   }
 }
 
-@media(max-width: 1387px) {
-}
-
 @media(max-width: 1121px) {
   main form {
-    margin: 0 40px;
+    margin: 80px 40px 0 0;
   }
 }
 
@@ -186,7 +174,7 @@ main aside img {
   }
 
   main form {
-    margin: 0;
+    margin: 80px 0 0 0;
     padding: 16px;
   }
 
