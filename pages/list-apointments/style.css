@@ -12,7 +12,7 @@ main header {
   background: #EBEBEB;
 }
 
-main header .content {
+main header .header-content {
   max-width: 1120px;
   height: 100%;
   width: 100%;
@@ -78,7 +78,8 @@ main .content .container aside h3 {
 }
 
 main .content .container aside .next-appointment {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -89,6 +90,13 @@ main .content .container aside .next-appointment {
   border: 2px solid #eb4747;
   position: relative;
   margin-bottom: 40px;
+}
+
+main .content .container aside .next-appointment strong {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 main .content .container aside .next-appointment::before {
@@ -164,6 +172,28 @@ main .content .container aside article .appointment strong {
   font-size: 20px;
   color: #4f4f4f;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media(max-width: 940px) {
+  main .content .container {
+    background-position-x: 0px;
+  }
+}
+
+@media(max-width: 881px) {
+  main .content .container {
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    max-width: 500px;
+  }
+
+  main .content .container > span {
+    margin-bottom: 32px;
+  }
 }
 
 @keyframes iconLink {
