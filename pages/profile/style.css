@@ -52,7 +52,11 @@ main form.user-loged img.barber {
   display: none;
 }
 
-main form.barber-loged img.user {
+main form.user-loged img.barber {
+  display: none;
+}
+
+main form.user-loged .input-content.barber {
   display: none;
 }
 
@@ -79,7 +83,7 @@ main form .input-content.current-password {
   margin-top: 24px;
 }
 
-main form .input-content input {
+main form .input-content input, select {
   width: 100%;
   border: 0;
   background: transparent;

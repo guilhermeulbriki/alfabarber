@@ -54,6 +54,10 @@ main form .select {
   color: #828282;
 }
 
+main form .select a + a {
+  margin-left: 16px;
+}
+
 main form .select .selected {
   color: #333333;
   position: relative;

@@ -78,7 +78,27 @@ header div nav:hover {
 }
 
 header div nav.barber:hover {
-  margin-top: 270px;
+  margin-top: 212px;
+}
+
+header div nav.admin:hover {
+  margin-top: 212px;
+}
+
+header div nav.barber li.admin {
+  display: none;
+}
+
+header div nav.admin li.barber {
+  display: none;
+}
+
+header div nav.admin li.admin {
+  display: block;
+}
+
+header div nav.user li.barber, li.admin {
+  display: none;
 }
 
 header div nav:hover ul {
