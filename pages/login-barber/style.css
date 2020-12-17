@@ -1,0 +1,207 @@
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .home {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  color: #a51212;
+}
+
+main .home:hover img {
+  animation: iconLink 0.4s;
+}
+
+main .home img {
+  margin-right: 8px;
+}
+
+main form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 160px;
+  position: relative;
+  text-align: center;
+  animation: moveForm 0.6s;
+}
+
+main form > img {
+  height: 203px;
+  margin-bottom: 32px;
+}
+
+main form h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+main form .select {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #828282;
+}
+
+main form .select a + a {
+  margin-left: 16px;
+}
+
+main form .select .selected {
+  color: #333333;
+  position: relative;
+}
+
+main form .select .selected::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #a51212;
+  bottom: -8px;
+}
+
+main form .input-content {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #e0e0e0;
+}
+
+main form .input-content:hover {
+  border: 1px solid #a51212;
+}
+
+main form .input-content + div {
+  margin-top: 16px;
+}
+
+main form .input-content input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+main form button {
+  margin-top: 32px;
+  width: 100%;
+  max-width: 340px;
+  height: 56px;
+  border-radius: 10px;
+  border: 2px solid #a51212;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+main form button:hover {
+  background: #a51212;
+  color: #e0e0e0;
+}
+
+main form > a {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EB4747;
+}
+
+main form > a:hover img {
+  animation: iconLink 0.4s;
+}
+
+main form > a img {
+  margin-right: 8px;
+}
+
+main form .input-content input::placeholder {
+  color: #bdbdbd;
+}
+
+main form .input-content > img {
+  margin-right: 16px;
+}
+
+main aside {
+  width: 100%;
+  max-width: 50%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+}
+
+main aside img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes moveForm {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  } to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes iconLink {
+  0% {
+    transform: translateX(0px);
+  } 33% {
+    transform: translateX(+4px);
+  } 66% {
+    transform: translateX(-4px);
+  } 100% {
+    transform: translateX(0px);
+  }
+}
+
+@media(max-width: 1387px) {
+}
+
+@media(max-width: 1121px) {
+  main form {
+    margin: 0 40px;
+  }
+}
+
+@media(max-width: 923px) {
+  main {
+    justify-content: center;
+  }
+
+  main form {
+    margin: 0;
+    padding: 16px;
+  }
+
+  main form > img {
+    width: 100%;
+    max-width: 187px;
+    height: auto;
+    margin: 0 auto 32px;
+  }
+
+  main aside {
+    display: none;
+  }
+}

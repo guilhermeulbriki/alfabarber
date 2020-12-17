@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background: #F2F2F2;
+  color: #4F4F4F;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #4F4F4F;
+}

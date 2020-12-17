@@ -1,0 +1,197 @@
+main {
+  min-height: 100vh;
+}
+
+main header {
+  width: 100%;
+  padding: 0 16px;
+  height: 150px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EBEBEB;
+}
+
+main header .header-content {
+  max-width: 1120px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main header a {
+  display: flex;
+  align-items: center;
+  color: #a51212;
+}
+
+main header a:hover img {
+  animation: iconLink 0.4s;
+}
+
+main header a img {
+  margin-right: 8px;
+}
+
+main .content {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 32px 32px 0;
+}
+
+main .content .container {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .content .container article {
+  flex: 1;
+  display: flex;
+}
+
+main .content .container article .barbershops {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.barbershops .barbershop {
+  display: flex;
+  flex-direction: column;
+  max-width: 352px;
+  width: 100%;
+  background: #EBEBEB;
+  border-radius: 16px;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.barbershop input {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.barbershops .barbershop:hover {
+  box-shadow: 0 0 8px #4f4f4f;
+  cursor: pointer;
+}
+
+.barbershop > img {
+  object-fit: contain;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.barbershop strong {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+  margin: 0 16px;
+}
+
+.barbershop span {
+  margin: 8px 16px 16px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.barbershop span > img {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.barbershop + .barbershop {
+  margin-top: 32px;
+}
+
+.barbers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  margin-left: 32px;
+}
+
+.barber {
+  background: #ebebeb;
+  border: 2px solid #ebebeb;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 288px;
+  transition: border-color 0.2s;
+  position: relative;
+}
+
+.barber input {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+
+.barber + .barber {
+  margin-top: 16px;
+}
+
+.barber:hover {
+  border: 2px solid #a51212;
+  cursor: pointer;
+}
+
+.barber.selected {
+  border: 2px solid #a51212;
+}
+
+.barber .description {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  margin-left: 8px;
+}
+
+.barber .description strong {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4f4f4f;
+  margin-bottom: 4px;
+}
+
+.barber .description p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4f4f4f;
+}
+
+main .content .container .calendar {
+  width: 370px;
+  margin-left: 80px;
+}
+
+@keyframes iconLink {
+  0% {
+    transform: translateX(0px);
+  } 33% {
+    transform: translateX(+4px);
+  } 66% {
+    transform: translateX(-4px);
+  } 100% {
+    transform: translateX(0px);
+  }
+}
