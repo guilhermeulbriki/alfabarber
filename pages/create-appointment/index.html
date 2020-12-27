@@ -22,7 +22,7 @@
       </div>
     </header>
     <div class="content">
-      <div class="container">
+      <form class="container">
         <article>
           <div class="barbershops">
             <div class="barbershop">
@@ -68,31 +68,27 @@
         </article>
 
         <aside class="appointment">
-          <select name="month">
-            <option value="" hidden>Escolha o mês</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-            <option value="janeiro">Janeiro</option>
-          </select>
+          <div class="select-content">
+            <select name="month">
+              <option value="" hidden>Escolha o mês</option>
+            </select>
+          </div>
 
-          <select name="day">
-            <option value="" hidden>Escolha o dia</option>
-          </select>
+          <div class="select-content">
+            <select name="day">
+              <option value="" hidden>Escolha o dia</option>
+            </select>
+          </div>
 
-          <select name="time">
-            <option value="" hidden>Escolha a hora</option>
-          </select>
+          <div class="select-content">
+            <select name="time">
+              <option value="" hidden>Escolha a hora</option>
+            </select>
+          </div>
+
+          <button type="submit">Agendar</button>
         </aside>
-      </div>
+      </form>
     </div>
   </main>
 </body>
