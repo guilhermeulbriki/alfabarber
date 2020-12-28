@@ -1,0 +1,44 @@
+CREATE DATABASE alfabarber;
+
+USE alfabarber;
+
+CREATE TABLE userb(
+	idUser INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    password varchar(100),
+    type int,
+    PRIMARY KEY(idUser)
+);
+
+CREATE TABLE barber(
+	idBarber INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    description VARCHAR(200),
+    passwor varchar(100),
+    PRIMARY KEY(idBarber)
+);
+CREATE TABLE place(
+	idPlace INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50),
+    phone VARCHAR(50),
+    latitude DECIMAL(10,8) NOT NULL,
+    longitude DECIMAL(11,8) NOT NULL,
+    img VARCHAR(50),
+    PRIMARY KEY(idPlace)
+);
+
+CREATE TABLE agenda(
+    idAgenda INT NOT NULL AUTO_INCREMENT,
+	dt DATE,
+    hour TIME,
+    idUser INT NOT NULL,
+    idPlace INT NOT NULL,
+    idBarber INT NOT NULL,
+    PRIMARY KEY(idAgenda),
+    FOREIGN KEY(idUser) REFERENCES userb(idUser),
+    FOREIGN KEY(idPlace) REFERENCES place(idPlace),
+    FOREIGN KEY(idBarber) REFERENCES barber(idBarber)
+);
+

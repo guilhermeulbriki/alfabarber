@@ -1,3 +1,8 @@
+<?php
+  include "../../database/connection.php";
+  include "../../src/code/session_check.php";
+  include "../../src/code/update/profile.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +20,7 @@
     <header>
       <div class="header-content">
         <img src="../../assets/images/logo.svg" alt="AlfaBarber">
-        <a class="home" href="../../index.html">
+        <a class="home" href="../../index.php">
           <img src="../../assets/icons/home.svg" alt="Home">
           Voltar para a home
         </a>
@@ -28,25 +33,22 @@
             <input type="text" value="Bairro Aparecida">
             <div class="options">
               <span>Alterar nome</span>
-              <img src="../../assets/icons/thrash.svg" alt="Thrash">
+              <a href="../../src/code/delete/delete-place.php?id="><img src="../../assets/icons/thrash.svg" alt="Thrash"></a>
             </div>
           </header>
           <div class="barbers">
-            <div class="barber">
-              <img src="../../assets/images/barber.png" alt="Barber">
-              <article>
-                <h2>Bruno Henrique</h2>
-                <p class="description">Corto cabelo a mais de 10 anos</p>
-              </article>
-            </div>
-            <div class="barber">
-              <img src="../../assets/images/barber.png" alt="Barber">
-              <article>
-                <h2>Bruno Henrique</h2>
-                <p class="description">Corto cabelo a mais de 10 anos</p>
-              </article>
-            </div>
-          </div>
+            <?php
+              $result_query = $dbc->query("SELECT * FROM barber");
+              while($rows = mysqli_fetch_array($result_query)){
+               echo '<div class="barber">
+                      <img src="../../assets/images/barber.png" alt="Barber">
+                      <article>
+                        <h2>'.$rows['name'].'</h2>
+                        <p class="description">'.$rows['description'].'</p>
+                      </article>
+                    </div>';
+              }
+            ?>
         </article>
         <article class="barbershop">
           <header>
@@ -57,20 +59,18 @@
             </div>
           </header>
           <div class="barbers">
-            <div class="barber">
-              <img src="../../assets/images/barber.png" alt="Barber">
-              <article>
-                <h2>Bruno Henrique</h2>
-                <p class="description">Corto cabelo a mais de 10 anos</p>
-              </article>
-            </div>
-            <div class="barber">
-              <img src="../../assets/images/barber.png" alt="Barber">
-              <article>
-                <h2>Bruno Henrique</h2>
-                <p class="description">Corto cabelo a mais de 10 anos</p>
-              </article>
-            </div>
+          <?php
+              $result_query = $dbc->query("SELECT * FROM barber");
+              while($rows = mysqli_fetch_array($result_query)){
+               echo '<div class="barber">
+                      <img src="../../assets/images/barber.png" alt="Barber">
+                      <article>
+                        <h2>'.$rows['name'].'</h2>
+                        <p class="description">'.$rows['description'].'</p>
+                      </article>
+                    </div>';
+              }
+            ?>
           </div>
         </article>
         <button class="add-new-barbershop">Adicionar nova barbearia</button>

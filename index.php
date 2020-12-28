@@ -30,13 +30,13 @@
           </span>
           <ul>
             <li>
-              <a href="./pages/profile/index.html">
+              <a href="./pages/profile/index.php">
                 <img src="./assets/icons/info.svg" alt="Info">
                 Informações do seu perfil
               </a>
             </li>
             <li class="admin">
-              <a href="./pages/manage-barbers/index.html">
+              <a href="./pages/manage-barbers/index.php">
                 <img src="./assets/icons/edit.svg" alt="Edit">
                 Gerenciar barbeiros
               </a>

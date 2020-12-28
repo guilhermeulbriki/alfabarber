@@ -11,24 +11,32 @@
               $row = mysqli_fetch_assoc($result);
               $type=$row['type'];
               $name=$row['name'];
+              $id=$row['idUser'];
+              $class1 = 'barber';
               if($type==0){
                 $div = 'loged';
                 $class = 'user';
+                $class1 = 'barber';
               }elseif($type==1){
                 $div = 'loged';
                 $class = 'admin';
+                $class1 = 'barber';
               }
             }else{
               if($resultt = $dbc->query("SELECT * FROM barber WHERE email = '$login_session'")){
                 $row = mysqli_fetch_assoc($resultt);
                 $name=$row['name'];
+                $description = $row['description'];
+                $id=$row['idBarber'];
                 $div = 'loged';
                 $class = 'barber';
+                $class1 = "";
               }
             }
           }else{
             $div = 'not-loged';
             $class = null;
+            $class1 = 'barber';
           }
 	      }
 ?>
