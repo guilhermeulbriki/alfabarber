@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,3 +72,79 @@
   </main>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../global.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Register | AlfaBarber</title>
+
+  <script type="text/javascript">
+    function validar(){
+      var name = form.name.value;
+      var email = form.email.value;
+      var password = form.password.value;
+
+      if (name == "") {
+        alert('Preencha o campo com o seu nome');
+        form.name.focus();
+        return false;
+      }
+
+      if (email == "") {
+        alert('Preencha o campo com o seu email');
+        form.email.focus();
+        return false;
+      }
+
+      if (password== "") {
+        alert('Preencha o campo com a sua senha');
+        form.password.focus();
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <a class="home" href="../../index.html">
+      <img src="../../assets/icons/home.svg" alt="Home">
+      Voltar para a home
+    </a>
+    <aside>
+      <img src="../../assets/images/logout.png" alt="HairCut">
+    </aside>
+    <form method="POST" action="../../src/code/register/registerUser.php">
+      <img src="../../assets/images/logo.svg" alt="AlfaBarber">
+      <span class="select">
+        <a href="#" class="selected">Sou cliente</a>
+        <a href="../register-barber/index.html" >Sou cabeleireiro</a>
+      </span>
+      <div class="input-content">
+        <img src="../../assets/icons/user-line.svg" alt="User">
+        <input name="name" placeholder="Nome">
+      </div>
+      <div class="input-content">
+        <img src="../../assets/icons/email.svg" alt="Email">
+        <input type="email" name="email" placeholder="E-mail">
+      </div>
+      <div class="input-content">
+        <img src="../../assets/icons/password.svg" alt="Password">
+        <input type="password" name="password" placeholder="Senha">
+      </div>
+      <button type="submit">Cadastrar</button>
+      <a href="../login/index.html">
+        <img src="../../assets/icons/back.svg" alt="LogIn">
+        Voltar para o login
+      </a>
+    </form>
+  </main>
+</body>
+</html>
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a

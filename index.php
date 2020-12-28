@@ -23,20 +23,36 @@
           <img src="./assets/icons/login.svg" alt="LogIn">
           <a href="./pages/login/index.html">Fazer login</a>
         </span>
+<<<<<<< HEAD
+<<<<<<<< HEAD:index.php
         <nav class="<?php echo $class; ?>">
+========
+        <nav class="barber">
+>>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a:index.html
+=======
+        <nav class="<?php echo $class; ?>">
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a
           <span>
             <img src="./assets/icons/user.svg" alt="User">
             <p>Bem vindo, <br><strong><?php if(isset($name))echo $name; ?></strong></p>
           </span>
           <ul>
             <li>
+<<<<<<< HEAD
               <a href="./pages/profile/index.php">
+=======
+              <a href="./pages/profile/index.html">
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a
                 <img src="./assets/icons/info.svg" alt="Info">
                 Informações do seu perfil
               </a>
             </li>
             <li class="admin">
+<<<<<<< HEAD
               <a href="./pages/manage-barbers/index.php">
+=======
+              <a href="./pages/manage-barbers/index.html">
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a
                 <img src="./assets/icons/edit.svg" alt="Edit">
                 Gerenciar barbeiros
               </a>
@@ -140,4 +156,8 @@
     </footer>
   </main>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a

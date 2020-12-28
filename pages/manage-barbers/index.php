@@ -32,8 +32,13 @@
           <header>
             <input type="text" value="Bairro Aparecida">
             <div class="options">
+<<<<<<< HEAD:pages/manage-barbers/index.php
               <span>Alterar nome</span>
               <a href="../../src/code/delete/delete-place.php?id="><img src="../../assets/icons/thrash.svg" alt="Thrash"></a>
+=======
+              <span>Alterar dados</span>
+              <img src="../../assets/icons/thrash.svg" alt="Thrash">
+>>>>>>> 8ea4d4bee1659c8484ac63dafb72c613c920e32a:pages/manage-barbers/index.html
             </div>
           </header>
           <div class="barbers">
@@ -54,7 +59,7 @@
           <header>
             <input type="text" value="Bairro Aparecida">
             <div class="options">
-              <span>Alterar nome</span>
+              <span>Alterar dados</span>
               <img src="../../assets/icons/thrash.svg" alt="Thrash">
             </div>
           </header>
