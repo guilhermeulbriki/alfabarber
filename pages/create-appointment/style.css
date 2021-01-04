@@ -179,6 +179,23 @@ main .content .container article .barbershops {
   color: #4f4f4f;
 }
 
+.barber button {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 340px;
+  height: 56px;
+  border-radius: 10px;
+  border: 2px solid #a51212;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.barber button:hover {
+  background: #EB4747;
+  color: #F2F2F2;
+}
+
 .appointment {
   width: 250px;
   margin-left: 80px;
