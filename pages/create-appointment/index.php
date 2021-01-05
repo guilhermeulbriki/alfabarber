@@ -92,9 +92,8 @@
             </li>';
             }
           ?>
-          <li class="barber">
-            <button type="submit">Ver horários disponíveis</button>
-          </li>
+
+          <button type="submit">Buscar horários</button>
           </ul>
         </article>
 
